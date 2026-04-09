@@ -1,0 +1,36 @@
+{
+
+    "inbounds": [{
+            "port": 10000,
+            "listen": "127.0.0.1",
+            "protocol": "vmess",
+            "settings": {
+                "clients": [{
+                        "id": "8964a057-3351-4252-bf94-854611749188",
+                        "level": 0,
+                        "alterId": 0
+                    }
+                ],
+                "disableInsecureEncryption": true
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/"
+                }
+            }
+        }
+    ],
+    "outbounds": [{
+            "protocol": "freedom",
+            "settings": {}
+        }
+    ],
+    "dns": {
+        "server": [
+            "8.8.8.8",
+            "8.8.4.4",
+            "localhost"
+        ]
+    }
+}
